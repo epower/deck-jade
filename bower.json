@@ -1,0 +1,13 @@
+{
+  "name": "deck-jade",
+  "version": "0.0.1",
+  "main": "index.jade",
+  "dependencies": {
+    "deck.js": "*"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}
