@@ -6,5 +6,5 @@ This is a deck.js boilerplate slide set with a bower install file for dependenci
 
 To quickly try out presentations, I've used this with quickyJade (https://github.com/FuturaIO/quickyJade). To run:
 
-  npm install -g quickyjade
-  quickyjade
+    npm install -g quickyjade
+    quickyjade
