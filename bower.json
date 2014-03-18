@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "main": "index.jade",
   "dependencies": {
-    "deck.js": "*"
+    "deck.js": "*",
+    "deck.automatic.js": "git@github.com:rchampourlier/deck.automatic.js.git#~1.1.0"
   },
   "ignore": [
     "**/.*",
