@@ -17,6 +17,7 @@ html
     link(rel="stylesheet", href="bower_components/deck.js/extensions/status/deck.status.css")
     link(rel="stylesheet", href="bower_components/deck.js/extensions/hash/deck.hash.css")
     link(rel="stylesheet", href="bower_components/deck.js/extensions/scale/deck.scale.css")
+    link(rel="stylesheet", href="bower_components/deck.automatic.js/automatic/deck.automatic.css")
 
     //Style theme. More available in /themes/style/ or create your own. 
     link(rel="stylesheet", href="bower_components/deck.js/themes/style/neon.css")
@@ -32,6 +33,7 @@ html
 
 
     //Begin extension snippets. Add or remove as needed. 
+    div.deck-automatic-link(title="Play/Pause") Play/Pause
 
     //deck.navigation snippet 
     a.deck-prev-link(href="#", title="Previous") &#8592;
@@ -62,9 +64,20 @@ html
     script(src="bower_components/deck.js/extensions/status/deck.status.js")
     script(src="bower_components/deck.js/extensions/navigation/deck.navigation.js")
     script(src="bower_components/deck.js/extensions/scale/deck.scale.js")
+    script(src="bower_components/deck.automatic.js/automatic/deck.automatic.js")
 
     //Initialize the deck. You can put this in an external file if desired. 
     script.
       $(function() {
+              $.extend(true, $.deck.defaults, {
+
+                // other options (core or extensions)
+
+                automatic: {
+                  startRunning: false,    // true or false
+                  cycle: false,           // true or false
+                  slideDuration: 20000 // duration in milliseconds
+                }
+              });
               $.deck('.slide');
       });
